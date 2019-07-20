@@ -1,0 +1,92 @@
+body {
+    background-color: #a5c7ec;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    font-family: helvetica, arial, sans-serif;
+    margin: 2rem;
+}
+
+content {
+    margin: 2rem;
+}
+
+hr {
+    clear: both;
+}
+
+h3 {
+    
+}
+
+ul {
+    margin-right: 2rem;
+    margin-left: -2rem;
+}
+
+img {
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+p {
+    width: 100%;
+    float: none;
+    font-size: 0.75rem;
+}
+
+nav{
+    
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+@media (min-width: 30rem) {
+    
+content {
+    max-width: 60rem;
+    text-align: center;
+}
+
+hr {
+    display: none;
+}
+
+ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 2.5%;
+    background-color: aliceblue;
+}
+
+h3 {
+    
+}
+
+img {
+    width: 25%;
+    float: left;
+}
+
+p {
+    width: 70%;
+    float: right;
+    font-size: 1rem;
+}
+}
+/*Stock Images from the following web addresses: 
+    https://pixabay.com/photos/alternative-blue-cell-clean-eco-21581/
+
+    https://pixabay.com/photos/wind-farm-windmills-turbines-energy-538576/
+*/
