@@ -1,92 +1,229 @@
+/*Colours Used for Theme: #153243 #a6c8ed #fff  */
+
+
+/*Full Site Styles*/
+
+
 body {
-    background-color: #a5c7ec;
-    background-image: url(images/background.jpg);
-    background-repeat: no-repeat;
-    font-family: helvetica, arial, sans-serif;
-    margin: 2rem;
+	background-color: #a6c8ed;
+	font-family: helvetica, arial, sans-serif;
+	margin: 2rem;
 }
 
-content {
-    margin: 2rem;
+a {
+	color:#153243;
 }
 
-hr {
-    clear: both;
+
+/*Header Styles*/
+
+
+header {
+	max-width: 60rem;
+	margin: auto;
 }
 
-h3 {
-    
+.title {
+	display:block;
+	margin: auto;
+	float: none;
+	width: 100%;
+	max-width: 60rem;
+}
+
+.large {
+	display: none;
+}
+
+ul li a:hover {
+	color: #fff;
 }
 
 ul {
-    margin-right: 2rem;
-    margin-left: -2rem;
-}
-
-img {
-    width: 100%;
-    text-align: center;
-    clear: both;
-}
-
-p {
-    width: 100%;
-    float: none;
-    font-size: 0.75rem;
-}
-
-nav{
-    
+	margin-right: 2rem;
+	margin-left: -2rem;
 }
 
 nav ul {
-    list-style: none;
+	list-style: none;
 }
 
 nav li {
-    display: block;
+	display: block;
 }
 
 nav a {
-    text-decoration: none;
-}
-
-@media (min-width: 30rem) {
-    
-content {
-    max-width: 60rem;
-    text-align: center;
+	text-decoration: none;
 }
 
 hr {
-    display: none;
+	clear: both;
+	height:3px; 
+	border:none; 
+	color:#153243; 
+	background-color:#153243;
 }
 
-ul li {
-    float: left;
-    width: 20%;
-    text-align: center;
-    margin: 2.5%;
-    background-color: aliceblue;
+button {
+	padding: 5px;
+	border-radius: 5px;
+	background-color:#153243;
+	color: #fff;
 }
 
-h3 {
-    
+button:hover {
+	background-color:#fff;
+	color: #153243;
+}
+
+i {
+	font-size: 2rem;
+	margin: 9px;
+}
+
+
+/*Main Content Styles*/
+
+
+content {
+	margin: 2rem;
+}
+
+
+.divider {
+	display: none;
 }
 
 img {
-    width: 25%;
-    float: left;
+	width: 100%;
+	text-align: center;
+	clear: both;
 }
 
-p {
-    width: 70%;
-    float: right;
-    font-size: 1rem;
+.content p {
+	width: 100%;
+	float: none;
+	font-size: 0.75rem;
 }
-}
-/*Stock Images from the following web addresses: 
-    https://pixabay.com/photos/alternative-blue-cell-clean-eco-21581/
 
-    https://pixabay.com/photos/wind-farm-windmills-turbines-energy-538576/
-*/
+
+/*Footer Styles*/
+
+footer {
+	clear: both;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+	margin-bottom: 0;
+	object-position: bottom;
+	padding-top: 900px;
+	background-image: url('../images/background.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	z-index: -10;
+}
+
+footer p {
+	color: #153243;
+	float: left;
+}
+
+.icons {
+	float: left;
+}
+
+
+/*Tablet/Desktop Version*/
+
+@media (min-width: 30rem) {
+
+/*	Header Styles*/
+	
+	
+	.large {
+		display: block;
+	}
+	
+	.small {
+		display: none;
+	}
+	
+	ul li {
+		float: left;
+		width: 20%;
+		text-align: center;
+		margin: 2.5%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: #fff;
+		color: #fff;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	ul li:hover {
+		background-color: #153243;
+		color: #fff;
+		box-shadow: none;
+	}
+	
+	nav ul hr {
+		display: none;
+	}
+	
+	
+/*	Main Content Styles*/
+	
+	
+	.content {
+		max-width: 60rem;
+		object-position: center;
+	}
+	
+	.divider {
+		display: inherit
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	img {
+		width: 25%;
+		float: left;
+	}
+
+	.content p {
+		width: 70%;
+		float: right;
+		font-size: 1rem;
+	}
+	
+	
+/*	Footer Styles*/
+	
+	
+	footer {
+		clear: both;
+		background-image: url('../images/background-wide.jpg');
+	}
+
+}
+
+
+/*Desktop Version*/
+
+@media (min-width: 60rem) {
+	
+	.content {
+		margin: auto;
+	}
+	
+		h3 {
+		font-size: 3rem;
+	}
+}
+
