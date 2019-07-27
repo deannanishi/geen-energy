@@ -35,15 +35,15 @@ function eventHandler(ev) {
 
     if (btnText === "SOLAR") {
         $content.innerHTML = `<h3>${dataResorce[0].heading}</h3>
-                              <img src="../images/solar.jpg" alt="Solar Pannels">
+                              <img src="./images/solar.jpg" alt="Solar Pannels">
                               <p>${dataResorce[0].bodyText}</p>`;
     } else if (btnText === "WIND") {
         $content.innerHTML = `<h3>${dataResorce[1].heading}</h3>
-                              <img src="../images/wind.jpg" alt="Wind Mills">
+                              <img src="./images/wind.jpg" alt="Wind Mills">
                               <p>${dataResorce[1].bodyText}</p>`;
     } else {
         $content.innerHTML = `<h3>${dataResorce[2].heading}</h3>
-                              <img src="../images/hydro.jpg" alt="placeholder">
+                              <img src="./images/hydro.jpg" alt="placeholder">
                               <p>${dataResorce[2].bodyText}</p>`;
     }
 
